@@ -9,13 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ManalAlkuraya/wireMock_Project.git'
-            }
-        }
-
-        stage('Verify Docker Installation') {
-            steps {
-                sh 'docker --version'
+                git 'https://github.com/ManalAlkuraya/build_wireMock_Project.git'
             }
         }
 
