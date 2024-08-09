@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/ManalAlkuraya/build_wireMock_Project.git'
+                git 'https://github.com/ManalAlkuraya/wireMock_Project.git''
             }
         }
 
