@@ -4,6 +4,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'manalalkuraya/my-wiremock-server:latest'
         REGISTRY_CREDENTIALS = credentials('docker-hub-wiremock-server')
+        DOCKER_PATH = '/usr/local/bin/docker'
     }
 
     stages {
