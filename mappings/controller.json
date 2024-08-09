@@ -1,6 +1,6 @@
 {
   "request": {
-    "urlPathPattern": "/v1/*(ar|en)/private/users/(.*)/orderDetails",
+    "urlPathPattern": "/v1/*(ar|en)/private/users/orderDetails",
     "method": "GET"
   },
   "response": {
