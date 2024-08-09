@@ -41,7 +41,7 @@ pipeline {
             steps {
                 script {
                     sh 'docker stop wiremock-server || true && docker rm wiremock-server || true' // Stop and remove existing container
-                    sh 'docker run -d --name wiremock-server -p 8080:8080 ${DOCKER_IMAGE}' // Deploy new container
+                    sh 'docker run -d --name wiremock-server -p 8082:8080 ${DOCKER_IMAGE}' // Deploy new container
                 }
             }
         }
